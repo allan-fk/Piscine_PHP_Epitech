@@ -1,0 +1,38 @@
+Man du git  (FRANCAIS) :
+
+init : Permet de copier le code source d'un fichier et de le placer dans un dossier.
+
+add : Commande appelee sans argument, copie tout le repertoire courant ainsi que les sous dossiers et les place dans un dossier que vous aurez cree dans votre dossier .MyGitLight.
+
+commit : Commande qui prend pour argument un message et qui cree une tarball avec le contenu de votre dossier.
+
+rm : Supprime le ou les fichiers/dossiers passes en arguments.
+
+log : Affiche tous les commits tries par ordre decroissant.
+
+status : Affiche quels sont les fichiers qui ont ete modifies.
+
+checkout : Prend en argument l'ID d'un commit et permet de passer d'un commit a un autre.
+
+diff : Produit une difference entre le sommet de deux branches.
+
+
+
+
+Git's Man (ENGLISH) : 
+
+init : Copy the source code of a file and place it in a folder.
+
+add  : Command called without argument, copy all the folder and subfolders and place them in .MyGitLight.
+
+commit : A command that takes a message as argument and creates a tarball with the contents of your folder.
+
+rm : Deletes the file (s) / folder (s) passed as arguments.
+
+log : Displays all the sorted commits in descending order.
+
+status : Displays which files have been modified.
+
+checkout : Supports the ID of a commit and allows to pass from one commit to another.
+
+diff : Produces a difference between the top of two branches.

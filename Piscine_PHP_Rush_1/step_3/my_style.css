@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+/*  
+@media screen and (max-width: 400px) 
+{
+  responsive a faire(?)
+}
+*/
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+body 
+{
+  background: #3c3d3f;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 
+{
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  font-size: 3.6em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p,
+span,
+option,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+label[type="text"]
+{
+  font-size: 12px; /* La taille de la police (hors titres) ait une taille de 12 pixels */
+}
+
+/* Quand le curseur passe au-dessus d'un bouton ou d'un champ, une animation se produit */
+
+@keyframes iii 
+{
+  0%   {background-color: #00d65a;}
+  25%  {background-color: red;}
+  50%  {background-color: #00d65a;}
+  75%  {background-color: blue;}
+  100%  {background-color: #00d65a;}
+}
+
+input[type="submit"]:hover 
+{
+  animation-name: iii;
+  animation-duration: 4s;
+}
+
+.wrapper1 
+{
+  width: 350px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -175px;
+}
+
+input 
+{
+  width: 350px;
+  padding: 20px 0px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #435160;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+input[type="checkbox"] 
+{
+  display: none;
+} 
+
+input:focus 
+{
+  color: white;
+}
+
+#genderlabel 
+{
+  display: block;
+  position: absolute;
+  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid #435160;
+}
+
+#gender2label 
+{
+  display: block;
+  position: absolute;
+  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid #435160;
+}
+
+input[type="submit"] 
+{
+  position: relative;
+  background: #00d65a;
+  border: 1px solid;
+  margin-left: 75px;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px; /* Bordures arrondies de 5px */
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 150px;
+  padding-bottom: 35px;
+  box-shadow: 0px 0px 10px 0px #3c3131; /* Le bouton de validation aura une ombre verticale noire */ 
+}
+
+
+.wrapper 
+{
+  width: 500px;
+  overflow: hidden;
+  color: #6D7781;
+  margin: 10px auto;
+}
+
+.gender 
+{
+  padding: 10px 25px;
+  font-size: 12px;
+  text-indent: 25px;
+  float: left;
+}
+
+.gender2 
+{
+  padding: 10px 125px;
+  font-size: 12px;
+  text-indent: 25px;
+  float: left;
+}
+
+[type="radio"] 
+{
+  display:none;
+}
+
+#gender:checked ~ label[for=gender] 
+{
+  background: white;
+}
+
+#gender2:checked ~ label[for=gender2] 
+{
+  background: white;
+}
+
+#selectr 
+{
+  position: relative;
+  background: transparent;
+  display: block;
+  width: 50%;
+  outline: none;
+  color: #6D7781;
+  border: none;
+  padding: 10px 10px 10px 5px;
+}
+
+.form-select 
+{
+  background: transparent;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.container 
+{
+  font-weight: 200;
+  position: absolute;
+}
+
+.check-container 
+{
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  padding-top: 0px;
+}
+
+input[type='checkbox'] + label 
+{
+  position: relative;
+  left: 0px;
+  top: -0px;
+  bottom: 10px;
+  right: 10px;
+  transition: all .5s ease;
+  width: 20px;
+  border: 4px solid #474444;
+  height: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.tag 
+{
+  float: left;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+input[type='checkbox']:checked + label 
+{
+  transition: all .5s ease;
+  display: inline-block;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #00d65a;
+  border-left-color: transparent;
+  transform:rotate(-50deg) translate(5px,-9px);
+}
+
+input[type='checkbox']:checked + label:before 
+{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  height: 15px;
+  width: 100%; 
+  border-left: 4px solid #00d65a;
+}
+
+#hobbies
+{
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
